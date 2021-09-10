@@ -1,9 +1,13 @@
 package me.untouchedodin0.oop;
 
+import java.util.List;
+
 public class User {
 
     private String _name;
     private String _membership = "Bronze";
+
+    public static List<User> admins;
 
     public String toString() {
         return getName() + " " + getMembership();

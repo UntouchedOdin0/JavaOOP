@@ -1,7 +1,6 @@
 package me.untouchedodin0.oop;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class OOP {
 
@@ -36,11 +35,13 @@ public class OOP {
         user.setName("Caleb");
         user.set_membership(User.Membership.Gold);
 
-        ArrayList<User> users = new ArrayList<>();
-        users.add(new User("Caleb"));
-        users.add(new User("Jason"));
+        // Creates a new ArrayList and store some users
 
-        for (User u : users) {
+        User.admins = new ArrayList<>();
+        User.admins.add(new User("Caleb"));
+        User.admins.add(new User("Jason"));
+
+        for (User u : User.admins) {
             System.out.println(u.getName());
         }
 
