@@ -2,7 +2,16 @@ package me.untouchedodin0.oop;
 
 public class User {
 
-    String name;
+    private String name;
     String membership;
-    int age;
+
+    // If the args parameters has the same name as the variable, prefix it with "this"
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    String getName() {
+        return name;
+    }
 }

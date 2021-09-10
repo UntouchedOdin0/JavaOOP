@@ -21,19 +21,16 @@ public class OOP {
     public static void main(String[] args) {
         System.out.println("Hello world"); // Hello world is a argument
         User user = new User(); // Creating a new User object.
-        User user2 = new User(); // Creating another User Object
+//        User user2 = new User(); // Creating another User Object
 
         /*
             Using the following bit of code assigns the values to the variables of the object.
          */
 
-        user.name = "Caleb";
+        user.setName("Caleb");
         user.membership = "Gold";
 
-        user2.name = "Sally";
-        user2.membership = "Silver";
 
-        System.out.println(user.name + " " + user.membership);
-        System.out.println(user2.name + " " + user2.membership);
+        System.out.println(user.getName() + " " + user.membership);
     }
 }
