@@ -35,16 +35,13 @@ public class OOP {
         user.setName("Caleb");
         user.set_membership(User.Membership.Gold);
 
-        // Creates a new ArrayList and store some users
+        // Creates a new ArrayList for the admins and store some users
 
         User.admins = new ArrayList<>();
         User.admins.add(new User("Caleb"));
         User.admins.add(new User("Jason"));
 
-        for (User u : User.admins) {
-            System.out.println(u.getName());
-        }
-
+        User.print_admin_names();
 //        System.out.println(user);
 //        System.out.println(user2);
 //        System.out.println(5);
